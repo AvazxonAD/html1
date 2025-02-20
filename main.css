@@ -1,0 +1,13 @@
+.link {
+    color: black;
+}
+.table {
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+table {
+    border-collapse: collapse;
+}
