@@ -1,21 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
-    <link rel="stylesheet" href="main.css">
+    <title>loyiha1</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
+
 <body>
-    <div>
-        <ol>
-            <li>
-                <a href="workers.html" class="link">Xodimlar</a>
-            </li>
-            <li>
-                <a href="cars.html" class="link">Mashinalar</a>
-            </li>
-        </ol>
+    <div class="container">
+
+        <h1>Anketa : </h1>
+        <hr>
+
+        <form action="#" method="get">
+            <h2> Mijoz familyasi va ismi</h2>
+            <div class="client_input_group">
+                <div class="input_wrapper">
+                    <input class="firstname_input" type="text" name="firstname">
+                    <span class="span">Ismingizni kiriting</span>
+                </div>
+
+                <div class="input_wrapper">
+                    <input class="lastname_input" type="text" name="lastname">
+                    <span class="span">Familyanggizni kiriting</span>
+                </div>
+            </div>
+
+            <h2>Manzil</h2>
+
+            <div class="address_input_group">
+                <input class="street_input" type="text" name="street">
+                <span class="street_span">Kocha nomi</span>
+
+                <input class="city_input" type="text" name="city_input">
+                <span class="city_span">Shahar</span>
+
+                <div class="row">
+                    <input class="post_input" type="text" name="post_input">
+                    <select name="region" class="region_select">
+                        <option value="toshkent">Toshkent</option>
+                        <option value="samarqand">Samarqand</option>
+                        <option value="sirdaryo">Sirdaryo</option>
+                        <option value="namangan">Namangan</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <span class="post_span">Pochta indexsi</span>
+                    <span class="region_span">Viloyatni tanlang</span>
+                </div>
+            </div>
+
+
+
+            <h2>Boglanish</h2>
+
+            <div class="call_group">
+                <div class="input_wrapper">
+                    <input class="phone_number" type="text" name="phone_number">
+                    <span class="span">Telefon raqan</span>
+                </div>
+
+                <div class="input_wrapper">
+                    <input class="email" type="text" name="email">
+                    <span class="span">Email</span>
+                </div>
+            </div>
+
+            <h2>Shaxsiy malumotlar</h2>
+
+            <div class="gender_radio_input">
+                <label for="female">Erkak</label>
+                <input type="radio" name="gender" id="female" value="female">
+
+                <label for="male">Ayol</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </div>
+
+            <h2>Baholash</h2>
+
+            <div class="radio_input">
+                <span>Mehmonxona xizmati: </span>
+
+                <label for="bad_hotel">Yomon</label>
+                <input type="radio" name="hotel" id="bad_hotel" value="bad">
+
+                <label for="good_hotel">Yaxshi</label>
+                <input type="radio" name="hotel" id="good_hotel" value="good">
+
+                <label for="great_hotel">Ajoyib</label>
+                <input type="radio" name="hotel" id="great_hotel" value="great">
+            </div>
+
+            <div class="radio_input">
+                <span>Xodimlar xizmati :</span>
+
+                <label for="bad_staff">Yomon</label>
+                <input type="radio" name="staff_service" id="bad_staff" value="bad">
+
+                <label for="good_staff">Yaxshi</label>
+                <input type="radio" name="staff_service" id="good_staff" value="good">
+
+                <label for="great_staff">Ajoyib</label>
+                <input type="radio" name="staff_service" id="great_staff" value="great">
+            </div>
+
+            <div class="radio_input">
+                <span>Ovqatlar :</span>
+
+                <label for="bad_food">Yomon</label>
+                <input type="radio" name="food" id="bad_food" value="bad">
+
+                <label for="good_food">Yaxshi</label>
+                <input type="radio" name="food" id="good_food" value="good">
+
+                <label for="great_food">Ajoyib</label>
+                <input type="radio" name="food" id="great_food" value="great">
+            </div>
+
+            <div class="radio_input">
+                <span>Servis xizmati :</span>
+
+                <label for="bad_service">Yomon</label>
+                <input type="radio" name="service" id="bad_service" value="bad">
+
+                <label for="good_service">Yaxshi</label>
+                <input type="radio" name="service" id="good_service" value="good">
+
+                <label for="great_service">Ajoyib</label>
+                <input type="radio" name="service" id="great_service" value="great">
+            </div>
+
+            <div class="radio_input">
+                <span>Internet sifati :</span>
+
+                <label for="bad_internet">Yomon</label>
+                <input type="radio" name="internet" id="bad_internet" value="bad">
+
+                <label for="good_internet">Yaxshi</label>
+                <input type="radio" name="internet" id="good_internet" value="good">
+
+                <label for="great_internet">Ajoyib</label>
+                <input type="radio" name="internet" id="great_internet" value="great">
+            </div>
+
+            <div class="radio_input">
+                <span>Xonaning tozaligi :</span>
+
+                <label for="bad_clean">Yomon</label>
+                <input type="radio" name="clean" id="bad_clean" value="bad">
+
+                <label for="good_clean">Yaxshi</label>
+                <input type="radio" name="clean" id="good_clean" value="good">
+
+                <label for="great_clean">Ajoyib</label>
+                <input type="radio" name="clean" id="great_clean" value="great">
+            </div>
+            <button class="button">Yuborish</button>
+        </form>
+
     </div>
 </body>
+
 </html>
